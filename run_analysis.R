@@ -1,5 +1,4 @@
 library(dplyr)
-library(tidyr)
 library(readr)
 library(stringr)
 
@@ -61,4 +60,4 @@ tidy_data <- all_data %>%                                                       
         summarize_all(funs(mean)) %>%
         arrange(activity, subject_id)
 
-write.table(tidy_data, "final_output.txt", row.names = FALSE)                    # Create final output file
+write.table(tidy_data, "./code/final_output.txt", row.names = FALSE)                    # Create final output file
