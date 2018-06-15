@@ -46,18 +46,18 @@ tidy_data <- all_data %>%
 
 ## Script Variables
 This is a list of variables used in the script with their usage description
-**actv_txt** - dataset containing Descriptive activities mapping
-**all_data** - final unformated dataset
-**ftrs_mean** - Subset of mean features
-**ftrs_txt** - All features
-**subject_training** - Dataset loaded from subject_train.txt data
-**subject_tst** - Dataset loaded from subject_tst.txt data
-**tidy_data** - Final dataset
-**training_data** - Dataset with binded training data
-**tst_data** - Dataset with binded tst data
-**x_training** - Dataset loaded from X_train.txt data
-**x_training_mean_std** - Subset of mean and std x_training
-**x_tst** - Dataset loaded from X_test.txt data
-**x_training** - Dataset loaded from X_train.txt data
-**y_training** - Dataset loaded from y_train.txt data
-**y_tst** - Dataset loaded from y_test.txt data
+- **actv_txt** - dataset containing Descriptive activities mapping
+- **all_data** - final unformated dataset
+- **ftrs_mean** - Subset of mean features
+- **ftrs_txt** - All features
+- **subject_training** - Dataset loaded from subject_train.txt data
+- **subject_tst** - Dataset loaded from subject_tst.txt data
+- **tidy_data** - Final dataset
+- **training_data** - Dataset with binded training data
+- **tst_data** - Dataset with binded tst data
+- **x_training** - Dataset loaded from X_train.txt data
+- **x_training_mean_std** - Subset of mean and std x_training
+- **x_tst** - Dataset loaded from X_test.txt data
+- **x_training** - Dataset loaded from X_train.txt data
+- **y_training** - Dataset loaded from y_train.txt data
+- **y_tst** - Dataset loaded from y_test.txt data
