@@ -36,4 +36,10 @@ This part of code example is using c_bind() function from **base** package in or
 training_data <- cbind(subject_training, x_training_mean_std, y_training_desc)
 ```
 
-
+This part of code example is using %>% to pipe functions group_by(),summarize_all() and arrange() from **dplyr** package over *all_data* dataset and store results in *tidy_data* dataset
+```
+tidy_data <- all_data %>%
+        group_by(activity, subject_id) %>%
+        summarize_all(funs(mean)) %>%
+        arrange(activity, subject_id)
+```

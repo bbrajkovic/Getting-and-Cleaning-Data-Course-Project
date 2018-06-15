@@ -2,6 +2,7 @@ library(dplyr)
 library(readr)
 library(stringr)
 
+
 ## DATA LOADING AND FORMATING ##
 
 actv_txt <- read_delim("./data/activity_labels.txt", col_names = FALSE, delim=" ")              # Load activity_labels.txt
@@ -22,7 +23,6 @@ ftrs_txt_vect <- str_replace_all(ftrs_txt_vect, "\\(", "")                      
 ftrs_txt_vect <- str_replace_all(ftrs_txt_vect, "\\)", "")
 ftrs_txt_vect <- str_replace_all(ftrs_txt_vect, "-", ".")
 colnames(x_training) <- ftrs_txt_vect
-
 
 mean_std <- grep(".*(mean|std)\\(\\).*", ftrs_txt$feature_desc)                                 # Extracting only the measurements on the mean and standard deviation
 ftrs_mean <- ftrs_txt[mean_std,]                                                                # Subsetting for mean and std
@@ -60,4 +60,4 @@ tidy_data <- all_data %>%                                                       
         summarize_all(funs(mean)) %>%
         arrange(activity, subject_id)
 
-write.table(tidy_data, "./code/final_output.txt", row.names = FALSE)                    # Create final output file
+write.table(tidy_data, "./code/final_output.txt", row.names = FALSE)                            # Create final output file
