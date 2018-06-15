@@ -1,5 +1,3 @@
-## Getting and Cleaning data - Course Project
-
 ### Script description
 
 *Script will perform 5 steps getting and cleaning data and will produce output file with independent tidy data set with the average of each variable for each activity and each subject.*
