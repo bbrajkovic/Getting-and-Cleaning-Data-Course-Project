@@ -11,3 +11,9 @@
 4. Data set containing average of each variable for each activity and each subject is created and exported to **final_output.txt**
 
 ### Brief description of main parts of code
+This part of code example is using read_delim() function from **reader** package in order to load data and then rename() function from **dplyr** package in order to add descriptive names to variables stored in actv_txt
+
+```
+actv_txt <- read_delim("./data/activity_labels.txt", col_names = FALSE, delim=" ")              # Load activity_labels.txt
+actv_txt <- rename(actv_txt, activity_id = X1, activity_name = X2)
+```
